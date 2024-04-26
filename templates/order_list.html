@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="productList">
+
+    {% for list in order_list %}
+        <LABEL >Name</LABEL>
+        <label class="item_info">{{ list.first_name }}</label>
+        <LABEL>Surname</LABEL>
+        <label class="item_info">{{ list.last_name }}</label>
+        <LABEL>Address</LABEL>
+        <label class="item_info">{{ list.address }}</label>
+        <LABEL>Product</LABEL>
+        <label class="item_info">{{ list.product }}</label>
+        <LABEL>Quantity</LABEL>
+        <label class="item_info">{{ list.quantity }}</label>
+        <br><br>
+    {% endfor %}
+
+</div>
+
+<style>
+    .item_info{
+        background-color: rgba(250, 219, 167, 0.9);
+    }
+    
+</style>
+
+
+
+
+</body>
+</html>
